@@ -1,0 +1,44 @@
+{
+  "name": "uber-login",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "rm -rf ./.cache",
+    "prebuild": "rm -rf dist build .cache",
+    "build": "yarn prebuild && parcel build ./src/index.html --out-dir ./build  --no-source-maps",
+    "start": "parcel -p 3000 watch ./src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "parcel-plugin-structurize": {
+    "rules": [
+      {
+        "match": "*.{js,js.map}",
+        "folder": "assets/js"
+      },
+      {
+        "match": "*.{css,css.map}",
+        "folder": "assets/css"
+      },
+      {
+        "match": "*.{png,svg,jpg,jpg2,jpeg,gif,bmp,webm}",
+        "folder": "assets/image"
+      }
+    ]
+  },
+  "dependencies": {
+    "parcel": "^1.12.4"
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-structurize": "^2.3.1",
+    "postcss-modules": "^4.0.0",
+    "postcss-uncss": "^0.17.0",
+    "sass": "^1.32.0",
+    "uncss": "^0.17.3"
+  }
+}
