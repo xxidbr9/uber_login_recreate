@@ -1,0 +1,17 @@
+// Font
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@mixin font {
+  font-family: "Poppins", sans-serif;
+}
+// Screen
+$md-screen: 770px;
+$md-height: 752px;
+
+// Color
+$primary: #11939a;
+$d-primary: #0c6c71;
+$black: #000000;
+$grey: #f1f1f1;
+$d-grey: #e5e5e4;
+$d-grey2: #d0d0d0;
+$white: #ffffff;

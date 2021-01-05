@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "prestart": "rm -rf ./.cache",
+    "prestart": "rm -rf ./.cache dist",
     "prebuild": "rm -rf dist build .cache",
-    "build": "yarn prebuild && parcel build ./src/index.html --out-dir ./build  --no-source-maps",
-    "start": "parcel -p 3000 watch ./src/index.html",
+    "build": "yarn prebuild && parcel build ./src/index.html --out-dir ./build",
+    "start": "parcel -p 3000 watch ./src/index.html --no-source-maps --open",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -25,7 +25,7 @@
       },
       {
         "match": "*.{png,svg,jpg,jpg2,jpeg,gif,bmp,webm}",
-        "folder": "assets/image"
+        "folder": "assets/img"
       }
     ]
   },
