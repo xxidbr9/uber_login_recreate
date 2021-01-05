@@ -89,7 +89,7 @@ main {
       height: 23rem;
     }
     @media (min-height: $md-height+1), screen and (max-width: $md-height) {
-      height: calc(100vh - $marginMainTop - $navbarHeight);
+      height: calc(100vh - #{$marginMainTop} - #{$navbarHeight});
     }
 
     // width responsive
