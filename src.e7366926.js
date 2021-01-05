@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"./../image/batik.png":[["batik.3a3b9194.png","Tcxd"],"Tcxd"],"./../image/bottom.svg":[["bottom.0a09b039.svg","fySt"],"fySt"]}],"Focm":[function(require,module,exports) {
 "use strict";require("./scss/styles.scss");
 },{"./scss/styles.scss":"mAbx"}]},{},["Focm"], null)
-//# sourceMappingURL=https://xxidbr9.github.io/uber_login_recreate/src.4db7760b.js.map
+//# sourceMappingURL=src.e7366926.js.map
