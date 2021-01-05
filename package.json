@@ -6,7 +6,7 @@
   "scripts": {
     "prestart": "rm -rf ./.cache dist",
     "prebuild": "rm -rf dist build .cache",
-    "build": "yarn prebuild && parcel build ./src/index.html --out-dir ./build",
+    "build": "yarn prebuild && parcel build ./src/index.html --out-dir ./build --public-url https://xxidbr9.github.io/uber_login_recreate/",
     "start": "parcel -p 3000 watch ./src/index.html --no-source-maps --open",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
